@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Air Pollution Indicator</title>
+	<link rel="stylesheet" href="./style.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=Montserrat:wght@700&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="root">
+		<h1 class="heading" style="color: black; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Air Quality Indicator 
+            <div class="tenor-gif-embed" data-postid="5425947" data-share-method="host" data-aspect-ratio="1.665" data-width="100%" data-height="10%"><a href="https://tenor.com/view/nicholas-cage-fabulous-gif-5425947">Nicholas Cage Fabulous GIF</a>from <a href="https://tenor.com/search/nicholas+cage-gifs">Nicholas Cage GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script></h1>
+		<div class="location-container">
+			<h2 class="sub-heading">Your Location :</h2>
+			<label for="error-msg" style="color: rgb(219, 133, 13);"></label><br />
+			<input
+				type="number"
+				name="lat"
+				placeholder="Latitude"
+				id="latitude"
+				step="0.01"
+				class="loc-input" />
+			
+			<input
+				type="number"
+				name="lon"
+				placeholder="Longitude"
+				id="longitude"
+				step="0.0001"
+				class="loc-input" />
+			<button class="search-btn">Search</button>
+		</div>
+		<div class="air-info">
+			<h2 class="sub-heading" style="color: rgb(36, 7, 88); font-family: Georgia, 'Times New Roman', Times, serif;">Air Quality Index :</h2>
+			<span class="air-quality">...</span>
+			<span class="arr">&nbsp;&rarr;&nbsp;</span>
+			<span class="air-quality-status">...</span>
+			<div class="component-container" style="color: rgb(7, 5, 8); font-family: monospace;">
+				<h2 class="sub-heading">
+					Concentration of pollutants in air :
+				</h2>
+
+				<div>
+					<h3 class="component-names">Carbon Monoxide :</h3>
+					<span class="component-val" data-comp="co"></span>
+				</div>
+				<div>
+					<h3 class="component-names">Nitrogen Monoxide :</h3>
+					<span class="component-val" data-comp="no"></span>
+				</div>
+				<div>
+					<h3 class="component-names">Nitrogen Dioxide :</h3>
+					<span class="component-val" data-comp="no2"></span>
+				</div>
+				<div>
+					<h3 class="component-names">Ozone :</h3>
+					<span class="component-val" data-comp="o3"></span>
+				</div>
+				<div>
+					<h3 class="component-names">Sulphur Dioxide :</h3>
+					<span class="component-val" data-comp="so2"></span>
+				</div>
+				<div>
+					<h3 class="component-names">Fine particles matter :</h3>
+					<span class="component-val" data-comp="pm2_5"></span>
+				</div>
+				<div>
+					<h3 class="component-names">Coarse particulate matter :</h3>
+					<span class="component-val" data-comp="pm10"></span>
+				</div>
+				<div>
+					<h3 class="component-names">Ammonia :</h3>
+					<span class="component-val" data-comp="nh3"></span>
+				</div>
+				<!--  micrograms per cubic meter of air (μg/m3)  -->
+			</div>
+		</div>
+		<footer>
+			 <img src="planet-earth.png" width="35" height="35" />
+		</footer>
+	</div>
+	<script src="./script.js" defer></script>
+</body>
+</html>
